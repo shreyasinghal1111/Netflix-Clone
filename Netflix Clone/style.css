@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica,Arial, sans-serif;
+}
+body
+{
+    background-color: #000;
+    color:#fff;
+}
+.header
+{
+    height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width:100px;
+    cursor: pointer;
+    padding:20px 0;
+}
+nav button
+{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color:#fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin:0 15px;
+    border-radius: 2px;
+    padding:5px;
+}
+.language-btn
+{
+    background-color: transparent;
+    border:1px solid #fff;
+}
+.language-btn img
+{
+    width: 10px;
+    margin-left: 10px;
+    margin-bottom:5px;
+}
+.header-content
+{
+   position:absolute;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+
+.header-content h1{
+    font-weight: 600;
+    line-height: 60px;;
+}
+.header-content h3{
+    font-weight: 400;
+    line-height: 50px;
+}
+.email-signup
+{
+    width:90%;
+    height:35px;
+    background-color: #fff;
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.email-signup input
+{
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    flex:1;
+}
+.email-signup button
+{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    font-size: 35px;
+    padding:20px 10px;
+}
+.features
+{
+    padding:50px 10%;
+    font-size: 20px;
+}
+.row
+{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+   align-items: center;
+    padding:50px 0;
+}
+.text-col
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.text-col h1
+{
+    margin-bottom: 20px;
+}
+.img-col
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img
+{
+    display: block;
+    width: 100%;
+    margin:auto;
+}
+.faq
+{
+   padding:10px 20%;
+    text-align:center;
+    
+}
+.faq h2
+{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion
+{
+    margin:50px;
+    width:100%;
+    max-width: 700px;
+}
+.accordion li
+{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.accordion li label
+{
+    display: flex;
+    text-align: center;
+    font-weight: 300px;
+    font-size: 30px;
+    background-color: #303030;
+    margin-bottom: 5px;
+
+}
+label::after
+{
+    content:"+";
+    position: absolute;
+    right:250px;
+    cursor:pointer;
+}
+input[type="radio"]
+{
+     display: none;
+}
+.accordion .content
+{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;;
+    overflow: hidden;
+    max-height: 0;
+}
+.accordion input[type="radio"]:checked +label+.content
+{
+    max-height: 700px;
+    padding:30px 20px;
+}
